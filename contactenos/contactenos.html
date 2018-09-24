@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contactenos</title>
+	<link rel="stylesheet" href="css/contactenos.css">
+</head>
+<body>
+	<h1>Contáctenos</h1>
+	<ul>
+		<li> 
+			<label for="name"> Nombre:</label>
+			<input type="name" name="name" id="name" placeholder="Ingrese el nombre" required>
+		</li>
+		<li>
+			<label for="email">E-mail:</label>
+			<input type="email" name="email" id="email" placeholder="Ingrese el correo" required>
+		</li>
+		<li>Tipo de Cuenta
+		</li>
+		<div class="cuenta">
+			Gold<input type="radio" name="cuenta" id="gold" value="gold"/>
+			Platino<input type="radio" name="cuenta" id="platino" value="platino"/>
+			General<input type="radio" name="cuenta" id="general" value="general"/>
+			None<input type="radio" name="cuenta" id="ninguno" value="ninguno"/>
+			</li>
+		</div>
+		<li><label for="soporte">Clases de soporte</label>
+			<select name="soporte" id="soporte">
+			<option value="online">On line</option>
+			<option value="en sitio">En sitio</option>
+			<option value="via telefonica">Vía Telefónica</option>
+			<option value="otros">Otros</option>
+			</select>
+		</li>
+		<li><label for="unica">My account is unica</label>
+			<input type="checkbox" name="unica" id="unica" value="unica">
+		</li>
+		</li>
+		<li>
+				<label for="comments">Comentarios</label>
+				<li>
+				<textarea name="comments" id="comments" cols="25" rows="3"></textarea>
+				</li>
+			</li>
+			<li>
+				<input type="submit" value="Send"/>
+			</li>
+	</ul>
+</body>
+</html>

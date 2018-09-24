@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario feedback</title>
+	<link rel="stylesheet" href="css/formulariolistas.css">
+</head>
+<body>
+	<h1>Formulario feedback</h1>
+
+	<form id="contact-form" action="" method="post">
+		<ul>
+			<li>
+				<label for="name">Nombre:</label>
+				<input type="text" name="name" id="name" placeholder="Ingrese su nombre" required/>
+			</li>
+			<li>
+				<label for="email">E-mail:</label>
+				<input type="email" name="email" id="email" placeholder="Ingrese su correo" required>
+			</li>
+			<li>
+				<label for="password">Contraseña:</label>
+				<input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required=""/>
+			</li>
+			<ul>
+				<li>¿Cómo te sientes hoy?:
+					<ul>
+						<li><label for="angry">Furioso</label>
+							<input type="checkbox" name="angry" id="angry" value="Angry">
+						</li>
+						<li><label for="sad">Triste</label>
+							<input type="checkbox" name="sad" id="sad" value="sad">
+						</li>
+						<li>
+							<label for="happy">Feliz</label>
+							<input type="checkbox" name="happy" id="happy" value="happy">
+						</li>
+						<li>
+							<label for="ambivalent">Deprimido</label>
+							<input type="checkbox" name="ambivalent" id="ambivalent" value="ambivalent">
+						</li>
+					</ul>
+				</li>
+				<li>Califique el nivel de satisfacción del servicio 
+					<ul>
+						<li><label for="vsat">Muy sastifecho</label>
+							<input type="radio" name="satisfaction" id="vsat" value="vsat" 
+							>
+						</li>
+						
+					</ul>
+				</li>
+			</ul>
+			<li>
+				<label for="comments">Comentarios</label>
+				<textarea name="comments" id="comments" cols="25" rows="3"></textarea>
+			</li>
+			<li>
+				<input type="submit" value="Guardar"/>
+				<input type="reset" value="Volver"/>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>
